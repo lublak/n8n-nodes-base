@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/${{#REPO#}}.git"
+    "url": "git+https://github.com/${{#REPO_FULLNAME#}}.git"
   },
   "author": "${{#REPO_OWNER#}}",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/${{#REPO#}}/issues"
+    "url": "https://github.com/${{#REPO_FULLNAME#}}/issues"
   },
-  "homepage": "https://github.com/${{#REPO#}}#readme",
+  "homepage": "https://github.com/${{#REPO_FULLNAME#}}#readme",
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^18.6.3",

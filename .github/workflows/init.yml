@@ -7,7 +7,7 @@ on:
 permissions: write-all
 
 jobs:
-  rename-project:
+  init-project:
     if: github.repository != 'lublak/n8n-nodes-base'
     runs-on: ubuntu-latest
     steps:

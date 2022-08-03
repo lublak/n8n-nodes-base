@@ -1,8 +1,6 @@
 name: Init the project from template
 
-on:
-  push:
-    branches: main
+on: [push]
 
 permissions: write-all
 
@@ -25,7 +23,6 @@ jobs:
       - name: run init.js
         if: steps.init_exists.outputs.files_exists == 'true'
         run: node init.js && rm -fr init.js && rm -fr .github/workflows/init.yml
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: EndBug/add-and-commit@v9
         with:
-          commit_message: "init"
-          push_options: --force
+          message: "init"

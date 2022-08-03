@@ -1,4 +1,4 @@
-import fs from 'fs/promises';
+const fs = require('fs/promises');
 
 const repo = process.env.GITHUB_REPOSITORY;
 const slash_index = repo.indexOf('/');

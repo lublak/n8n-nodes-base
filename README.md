@@ -11,13 +11,9 @@ Of course you are still free to use this as your base.
 
 ## Setup
 
-- add NPM_AUTH_TOKEN to your github secrets: https://github.com/owner/repo/settings/secrets/actions
 - https://github.com/lublak/n8n-nodes-base/generate
+- add NPM_AUTH_TOKEN to your github secrets: https://github.com/owner/repo/settings/secrets/actions
 
 ## Usage
-- npm install
--	Create nodes/credentials
-	Optional:
-	-	npm install n8n-node-dev -g
-	- cd nodes
-	- n8n-node-dev new
+
+https://docs.n8n.io/integrations/creating-nodes/build/

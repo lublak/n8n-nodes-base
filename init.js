@@ -21,7 +21,7 @@ function fillReplace(data, name, value) {
  * @param {string} file
  */
 async function apply(file) {
-  let data = await fs.readFile(file);
+  let data = (await fs.readFile(file)).toString();
   data = fillReplace(data, 'REPO_NAME', repo_name);
   data = fillReplace(data, 'REPO_OWNER', owner);
   data = fillReplace(data, 'REPO_FULLNAME', repo);
@@ -34,15 +34,15 @@ async function apply(file) {
  */
 async function moveTemplate(file) {
   await fs.unlink(file).catch(() => {});
-  await fs.rename(file + '.template', 'README.md');
+  await fs.rename(file + '.template', file);
 }
 
 async function init() {
   await moveTemplate('README.md');
   await moveTemplate('.github/ISSUE_TEMPLATE/bug_report.yml');
   await moveTemplate('.github/ISSUE_TEMPLATE/feature_request.yml');
-  await moveTemplate('.github/worklows/node.js.yml');
-  await moveTemplate('.github/worklows/npm-publish.yml');
+  await moveTemplate('.github/workflows/node.js.yml');
+  await moveTemplate('.github/workflows/npm-publish.yml');
   await apply('README.md');
   await apply('package.json');
   await apply('package-lock.json');

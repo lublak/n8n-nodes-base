@@ -41,8 +41,6 @@ async function init() {
   await moveTemplate('README.md');
   await moveTemplate('.github/ISSUE_TEMPLATE/bug_report.yml');
   await moveTemplate('.github/ISSUE_TEMPLATE/feature_request.yml');
-  await moveTemplate('.github/workflows/node.js.yml');
-  await moveTemplate('.github/workflows/npm-publish.yml');
   await apply('README.md');
   await apply('package.json');
   await apply('package-lock.json');

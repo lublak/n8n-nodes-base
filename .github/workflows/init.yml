@@ -2,21 +2,7 @@ name: Init the project from template
 
 on: [push]
 
-permissions:
-  actions: write
-  checks: write
-  contents: write
-  deployments: write
-  id-token: write
-  issues: write
-  discussions: write
-  packages: write
-  pages: write
-  pull-requests: write
-  repository-projects: write
-  security-events: write
-  statuses: write
-  workflows: write
+permissions: write-all
 
 jobs:
   init-project:

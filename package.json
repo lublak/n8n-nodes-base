@@ -25,7 +25,9 @@
     "type": "git",
     "url": "git+https://github.com/${{#REPO_FULLNAME#}}.git"
   },
-  "author": "${{#REPO_OWNER#}}",
+  "author": {
+    "name": "${{#REPO_OWNER#}}" 
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/${{#REPO_FULLNAME#}}/issues"

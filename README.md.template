@@ -6,6 +6,6 @@
 
 ## Install
 
-${{#REPO_NAME#}}
+Package: ${{#REPO_NAME#}}
 
 [`Documentation`](https://docs.n8n.io/integrations/community-nodes/installation/)

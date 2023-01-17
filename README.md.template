@@ -6,6 +6,8 @@
 
 ## Install
 
-Package: ${{#REPO_NAME#}}
-
-[`Documentation`](https://docs.n8n.io/integrations/community-nodes/installation/)
+Go to Settings (Cogwheel)
+Click on "Community Nodes"
+Enter "${{#REPO_NAME#}}" into the text box.
+Click on "I understand the risk ..."
+Click on "Install"
